@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Interactive Web Pages with JavaScript 🚀</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- ===== PART 1: EVENT HANDLING ===== -->
+    <section>
+        <h2>🎮 Counter Game</h2>
+        <p>Click the button to increase your score!</p>
+        <button id="counter-btn">Click Me!</button>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+
+    <!-- ===== PART 2: INTERACTIVE ELEMENTS ===== -->
+
+    <!-- Dropdown Menu -->
+    <section>
+        <h2>📂 Dropdown Menu</h2>
+        <div class="dropdown">
+            <button class="dropbtn">Choose a Language</button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="#">JavaScript</a>
+                <a href="#">Python</a>
+                <a href="#">Java</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collapsible FAQ Section -->
+    <section>
+        <h2>❓ FAQ Section</h2>
+        <div class="faq">
+            <button class="faq-btn">What is JavaScript?</button>
+            <div class="faq-content">JavaScript is a programming language used to make web pages interactive.</div>
+
+            <button class="faq-btn">What is DOM?</button>
+            <div class="faq-content">DOM stands for Document Object Model, allowing us to manipulate HTML with JS.</div>
+        </div>
+    </section>
+
+    <!-- Tabbed Interface -->
+    <section>
+        <h2>📑 Tabbed Interface</h2>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">HTML</button>
+            <button class="tab-btn" data-tab="tab2">CSS</button>
+            <button class="tab-btn" data-tab="tab3">JavaScript</button>
+        </div>
+        <div class="tab-content active" id="tab1">HTML is the structure of a webpage.</div>
+        <div class="tab-content" id="tab2">CSS styles the webpage beautifully.</div>
+        <div class="tab-content" id="tab3">JavaScript makes the webpage interactive.</div>
+    </section>
+
+    <!-- ===== PART 3: FORM VALIDATION ===== -->
+    <section>
+        <h2>📋 User Registration Form</h2>
+        <form id="signup-form">
+            <label>Full Name:</label>
+            <input type="text" id="name" required />
+            <small class="error" id="name-error"></small>
+
+            <label>Email:</label>
+            <input type="email" id="email" required />
+            <small class="error" id="email-error"></small>
+
+            <label>Password:</label>
+            <input type="password" id="password" required />
+            <small class="error" id="password-error"></small>
+
+            <button type="submit">Register</button>
+            <p id="form-success" class="success"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
